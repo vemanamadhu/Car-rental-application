@@ -64,7 +64,7 @@ def products(req,cid=0,size=''):
         cars=CarVariant.objects.all()
     if 'userid' in req.session:
         pass
-        #msg="You are given a Discount of 30% from Delta Driving on any Car Price. Thank You."
+        #msg="You are given a Discount of 30% from Wow Car Rental on any Car Price. Thank You."
     paginator=Paginator(cars,6)
     page_number = req.GET.get('page')
     page_obj = paginator.get_page(page_number)

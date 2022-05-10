@@ -156,7 +156,7 @@ def addCar(req):
         messages.success(req,"Car Variant added successfully")
         return redirect("/variants")
     cats=Category.objects.all()
-    fueltypes=('Petrol','Diesel','CNG')
+    fueltypes=('Gasoline','Diesel')
     return render(req,"newcar.html",locals())
 
 def editcar(req,cid):
@@ -184,7 +184,7 @@ def editcar(req,cid):
         return redirect("/variants")
     car=CarVariant.objects.get(pk=cid)
     cats=Category.objects.all()
-    fueltypes=('Petrol','Diesel','CNG')
+    fueltypes=('Gasoline','Diesel')
     return render(req,"editcar.html",locals())
 
 def bookings(req):

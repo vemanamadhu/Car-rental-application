@@ -21,14 +21,14 @@
                                     <th>Model Year</th>
                                     <th>{{car.modelyear}} model</th>
                                     <th>Price per day</th>
-                                    <th>&#8377; {{car.price}}/day</th>
+                                    <th>$ {{car.price}}/day</th>
                                 </tr>
                                 <tr>
                                     <th>Seats/Capacity</th>
                                     <th>{{car.capacity}} seats</th>
                                     {% if discount %}
                                     <th class="text-danger">Discount Available</th>
-                                    <th class="text-success">&#8377; {{discount}}</th>
+                                    <th class="text-success">$ {{discount}}</th>
                                     {% endif %}
                                 </tr>
                                 <tr>

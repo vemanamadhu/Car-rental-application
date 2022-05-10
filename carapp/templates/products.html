@@ -32,7 +32,7 @@
                             </nav>                        
                         
                         {% if msg %}
-                        <div class="alert alert-success text-center font-weight-bold">
+                        <div class="alert alert-dark text-center font-weight-bold">
                             {{msg}}
                         </div>
                         {% endif %}
@@ -41,7 +41,7 @@
                             {% for c in page_obj %}                    
                             <div class="col-md-4">
                                 <div class="card shadow mt-2">
-                                    <div class="card-header bg-success text-white font-weight-bold p-2">
+                                    <div class="card-header bg-dark text-white font-weight-bold p-2">
                                         <div class="form-row">
                                             <div class="col-sm-3">{{c.fueltype}}</div>
                                             <div class="col-sm-4 text-center">{{c.capacity}} seats</div>
@@ -52,7 +52,7 @@
                                     <div class="card-footer bg-dark text-white font-weight-bold p-2">
                                         <div class="form-row">
                                             <div class="col-sm-7">{{c.category.catname}}<br> {{c.title}}</div>
-                                            <div class="col-sm-5 text-right">&#8377; {{c.price}}/day</div>
+                                            <div class="col-sm-5 text-right">$ {{c.price}}/day</div>
                                         </div>                                
                                     </div>
                                 </div>

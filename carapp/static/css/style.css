@@ -405,9 +405,11 @@ a.w3_agile_vimeo:hover{
 }
 .bg-login{
 	background-image:url('../images/banner2.png');        
-	background-size:100%;
-	background-position:-50%;
-	box-shadow: 0 0 2px 2px gray;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
 }
 .card{
 	box-shadow: 0 0 2px 2px rgb(223, 219, 219);
